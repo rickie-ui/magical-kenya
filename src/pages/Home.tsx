@@ -28,8 +28,8 @@ const Home = ({ setSelectedPage }: Props) => {
       pagination={{ clickable: true }}
     >
       <SwiperSlide
-        className="relative gap-16 bg-banner-one
-       bg-cover bg-center  py-10 text-white/80 md:min-h-screen md:pb-0"
+        className="relative min-h-screen gap-16
+       bg-banner-one bg-cover  bg-center py-10 text-white/80 md:pb-0"
       >
         <div className=" absolute inset-0 bg-black/40"></div>
         {/* image and main header  */}
@@ -51,7 +51,7 @@ const Home = ({ setSelectedPage }: Props) => {
                 visible: { opacity: 1, x: 0 },
               }}
             >
-              <h3 className=" font-montserrat text-7xl">
+              <h3 className=" font-montserrat text-5xl md:text-7xl">
                 Explore the world now
               </h3>
 
@@ -90,8 +90,8 @@ const Home = ({ setSelectedPage }: Props) => {
         </motion.div>
       </SwiperSlide>
       <SwiperSlide
-        className="relative gap-16 bg-banner-two
-       bg-cover bg-center  py-10 text-white/80 md:min-h-screen md:pb-0"
+        className="relative min-h-screen gap-16
+       bg-banner-two bg-cover  bg-center py-10 text-white/80 md:pb-0"
       >
         <div className=" absolute inset-0 bg-black/40"></div>
         {/* image and main header  */}
@@ -113,7 +113,7 @@ const Home = ({ setSelectedPage }: Props) => {
                 visible: { opacity: 1, x: 0 },
               }}
             >
-              <h3 className=" font-montserrat text-7xl">
+              <h3 className=" font-montserrat text-4xl md:text-7xl">
                 Unforgettable Travel Experiences
               </h3>
 
@@ -153,8 +153,8 @@ const Home = ({ setSelectedPage }: Props) => {
         </motion.div>
       </SwiperSlide>
       <SwiperSlide
-        className="relative gap-16 bg-banner-three
-       bg-cover bg-center  py-10 text-white/80 md:min-h-screen md:pb-0"
+        className="relative min-h-screen gap-16
+       bg-banner-three bg-cover  bg-center py-10 text-white/80 md:pb-0"
       >
         <div className=" absolute inset-0 bg-black/40"></div>
         {/* image and main header  */}
@@ -176,7 +176,7 @@ const Home = ({ setSelectedPage }: Props) => {
                 visible: { opacity: 1, x: 0 },
               }}
             >
-              <h3 className=" font-montserrat text-7xl">
+              <h3 className=" font-montserrat text-4xl md:text-7xl">
                 Affordable Travel Packages
               </h3>
 

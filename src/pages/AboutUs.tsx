@@ -69,14 +69,25 @@ const AboutUs = ({ setSelectedPage }: Props) => {
               />
             </section>
           </div>
+        </motion.div>
 
-          <div className=" md:w-3/5">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, x: -50 },
+            visible: { opacity: 1, x: 0 },
+          }}
+        >
+          <div className="mx-auto w-10/12">
             <HText>Testimonials</HText>
             <p className="py-2">What Our Customers Are Saying?</p>
           </div>
 
           <Swiper
-            className="-ml-6 flex w-[350px] items-center justify-center  py-10 md:-ml-0  md:w-[1040px]"
+            className="flex w-[350px] items-center justify-center  py-10   md:w-[1040px]"
             // install Swiper modules
             modules={[Autoplay, Pagination, A11y]}
             slidesPerView={1}

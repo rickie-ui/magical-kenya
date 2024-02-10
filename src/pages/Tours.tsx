@@ -9,13 +9,6 @@ import {
 import HText from "@/components/header/HText";
 import Box from "@/components/box/Box";
 
-const container = {
-  hidden: {},
-  visible: {
-    transition: { staggerChildren: 0.2 },
-  },
-};
-
 type Props = {
   setSelectedPage: (value: SelectedPage) => void;
 };
@@ -70,14 +63,7 @@ const Tours = ({ setSelectedPage }: Props) => {
           </p>
         </motion.div>
 
-        {/* benefits */}
-        <motion.div
-          className="mt-5 grid-cols-1 items-center justify-between gap-8 md:grid md:grid-cols-4"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
-          variants={container}
-        >
+        <div className="mt-5 grid grid-cols-1 gap-8 md:grid-cols-4">
           {boxes.map((box: BenefitType) => (
             <Box
               key={box.title}
@@ -87,7 +73,7 @@ const Tours = ({ setSelectedPage }: Props) => {
               setSelectedPage={setSelectedPage}
             />
           ))}
-        </motion.div>
+        </div>
       </motion.div>
     </section>
   );
