@@ -3,7 +3,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import useMediaQuery from "@/hooks/useMediaQuery";
 import ActionButton from "../button/ActionButton";
 import { SelectedPage } from "@/shared/enum";
-import Logo from "@/assets/Logo.png";
+// import Logo from "@/assets/Logo.png";
 import Link from "./Link";
 
 type Props = {
@@ -36,6 +36,11 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
                 <div className={`${flexBetween} gap-8 text-sm`}>
                   <Link
                     page="Home"
+                    selectedPage={selectedPage}
+                    setSelectedPage={setSelectedPage}
+                  />
+                  <Link
+                    page="Services"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
                   />
@@ -88,6 +93,11 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
           <div className="ml-[33%] flex flex-col gap-10 text-2xl">
             <Link
               page="Home"
+              selectedPage={selectedPage}
+              setSelectedPage={setSelectedPage}
+            />
+            <Link
+              page="Services"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />

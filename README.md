@@ -1,1 +1,1 @@
-This is a gym web app built with react, typescript and tailwind css
+This is a travel web app built with react, typescript and tailwind css

@@ -1,7 +1,6 @@
 import { SelectedPage } from "@/shared/enum";
 import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
-import ContactUsPageGraphic from "@/assets/ContactUsPageGraphic.png";
 import HText from "@/components/header/HText";
 
 type Props = {
@@ -40,15 +39,13 @@ const ContactUs = ({ setSelectedPage }: Props) => {
           }}
         >
           <HText>
-            <span className="text-primary-500">JOIN NOW</span> TO GET IN SHAPE
+            <span className="text-primary-500">Discover Your</span> Next
+            Adventure
           </HText>
           <p className="my-5">
-            Benefit from state-of-the-art equipment, expert guidance, and a
-            supportive community that will inspire and motivate you every step
-            of the way. With personalized workout plans and a range of fitness
-            classes, achieving your fitness goals has never been more
-            accessible. Don't wait—seize the opportunity to sculpt your body,
-            boost your energy, and enhance your well-being.
+            Let us help you plan your next getaway now.Contact our agency and we
+            will get you a quote in a very short time. Discover the world with
+            us! Book your next unforgettable adventure today.
           </p>
         </motion.div>
 
@@ -145,13 +142,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
               visible: { opacity: 1, y: 0 },
             }}
           >
-            <div className="w-full before:absolute before:-bottom-20 before:-right-10 before:z-[-1] md:before:content-evolvetext">
-              <img
-                src={ContactUsPageGraphic}
-                alt="contact-us-page-graphic"
-                className="w-full"
-              />
-            </div>
+            <div></div>
           </motion.div>
         </div>
       </motion.div>

@@ -1,13 +1,7 @@
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { motion } from "framer-motion";
 import { SelectedPage } from "@/shared/enum";
-import useMediaQuery from "@/hooks/useMediaQuery";
 import ActionButton from "@/components/button/ActionButton";
-import HomePageText from "@/assets/HomePageText.png";
-import HomePageGraphic from "@/assets/HomePageGraphic.png";
-import SponsorRedBull from "@/assets/SponsorRedBull.png";
-import SponsorForbes from "@/assets/SponsorForbes.png";
-import SponsorFortune from "@/assets/SponsorFortune.png";
 import { Autoplay, Pagination, A11y } from "swiper/modules";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -21,8 +15,6 @@ type Props = {
 };
 
 const Home = ({ setSelectedPage }: Props) => {
-  const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
-
   return (
     <Swiper
       id="home"
@@ -42,7 +34,7 @@ const Home = ({ setSelectedPage }: Props) => {
         <div className=" absolute inset-0 bg-black/40"></div>
         {/* image and main header  */}
         <motion.div
-          className="mx-auto w-5/6 items-center justify-center md:flex md:h-5/6 md:h-screen"
+          className="mx-auto w-5/6 items-center justify-center md:flex  md:h-screen"
           onViewportEnter={() => setSelectedPage(SelectedPage.Home)}
         >
           {/* main header */}
@@ -59,12 +51,6 @@ const Home = ({ setSelectedPage }: Props) => {
                 visible: { opacity: 1, x: 0 },
               }}
             >
-              {/* <div className="relative">
-                <div className="before:absolute before:-top-20 before:left-20 before:z-[-1] md:before:content-evolvetext">
-                  {/* <img src={HomePageText} alt="home-page-text" /> 
-                  <p>Explore the world now.</p>
-                </div>
-              </div> */}
               <h3 className=" font-montserrat text-7xl">
                 Explore the world now
               </h3>
@@ -100,27 +86,8 @@ const Home = ({ setSelectedPage }: Props) => {
             </motion.div>
           </div>
           {/* image */}
-          <div className="flex basis-3/5 justify-center md:z-10 md:ml-40 md:mt-16 md:justify-end">
-            <img
-              src={HomePageGraphic}
-              alt="home-pageGraphic"
-              className=" hidden"
-            />
-          </div>
+          <div className="flex basis-3/5 justify-center md:z-10 md:ml-40 md:mt-16 md:justify-end"></div>
         </motion.div>
-
-        {/* SPONSORS */}
-        {/* {isAboveMediumScreens && (
-          <div className="h-[150px]  w-full bg-primary-100 py-10">
-            <div className="mx-auto w-5/6">
-              <div className="flex w-3/5 items-center justify-between gap-8">
-                <img alt="redbull-sponsor" src={SponsorRedBull} />
-                <img alt="forbes-sponsor" src={SponsorForbes} />
-                <img alt="fortune-sponsor" src={SponsorFortune} />
-              </div>
-            </div>
-          </div>
-        )} */}
       </SwiperSlide>
       <SwiperSlide
         className="relative gap-16 bg-banner-two
@@ -129,7 +96,7 @@ const Home = ({ setSelectedPage }: Props) => {
         <div className=" absolute inset-0 bg-black/40"></div>
         {/* image and main header  */}
         <motion.div
-          className="mx-auto w-5/6 items-center justify-center md:flex md:h-5/6 md:h-screen"
+          className="mx-auto h-5/6 w-5/6 items-center justify-center md:flex md:h-screen"
           onViewportEnter={() => setSelectedPage(SelectedPage.Home)}
         >
           {/* main header */}
@@ -146,12 +113,6 @@ const Home = ({ setSelectedPage }: Props) => {
                 visible: { opacity: 1, x: 0 },
               }}
             >
-              {/* <div className="relative">
-                <div className="before:absolute before:-top-20 before:left-20 before:z-[-1] md:before:content-evolvetext">
-                  {/* <img src={HomePageText} alt="home-page-text" /> 
-                  <p>Explore the world now.</p>
-                </div>
-              </div> */}
               <h3 className=" font-montserrat text-7xl">
                 Unforgettable Travel Experiences
               </h3>
@@ -188,27 +149,8 @@ const Home = ({ setSelectedPage }: Props) => {
             </motion.div>
           </div>
           {/* image */}
-          <div className="flex basis-3/5 justify-center md:z-10 md:ml-40 md:mt-16 md:justify-end">
-            <img
-              src={HomePageGraphic}
-              alt="home-pageGraphic"
-              className=" hidden"
-            />
-          </div>
+          <div className="flex basis-3/5 justify-center md:z-10 md:ml-40 md:mt-16 md:justify-end"></div>
         </motion.div>
-
-        {/* SPONSORS */}
-        {/* {isAboveMediumScreens && (
-          <div className="h-[150px]  w-full bg-primary-100 py-10">
-            <div className="mx-auto w-5/6">
-              <div className="flex w-3/5 items-center justify-between gap-8">
-                <img alt="redbull-sponsor" src={SponsorRedBull} />
-                <img alt="forbes-sponsor" src={SponsorForbes} />
-                <img alt="fortune-sponsor" src={SponsorFortune} />
-              </div>
-            </div>
-          </div>
-        )} */}
       </SwiperSlide>
       <SwiperSlide
         className="relative gap-16 bg-banner-three
@@ -217,7 +159,7 @@ const Home = ({ setSelectedPage }: Props) => {
         <div className=" absolute inset-0 bg-black/40"></div>
         {/* image and main header  */}
         <motion.div
-          className="mx-auto w-5/6 items-center justify-center md:flex md:h-5/6 md:h-screen"
+          className="mx-auto h-5/6 w-5/6 items-center justify-center md:flex md:h-screen"
           onViewportEnter={() => setSelectedPage(SelectedPage.Home)}
         >
           {/* main header */}
@@ -234,12 +176,6 @@ const Home = ({ setSelectedPage }: Props) => {
                 visible: { opacity: 1, x: 0 },
               }}
             >
-              {/* <div className="relative">
-                <div className="before:absolute before:-top-20 before:left-20 before:z-[-1] md:before:content-evolvetext">
-                  {/* <img src={HomePageText} alt="home-page-text" /> 
-                  <p>Explore the world now.</p>
-                </div>
-              </div> */}
               <h3 className=" font-montserrat text-7xl">
                 Affordable Travel Packages
               </h3>
@@ -276,27 +212,8 @@ const Home = ({ setSelectedPage }: Props) => {
             </motion.div>
           </div>
           {/* image */}
-          <div className="flex basis-3/5 justify-center md:z-10 md:ml-40 md:mt-16 md:justify-end">
-            <img
-              src={HomePageGraphic}
-              alt="home-pageGraphic"
-              className=" hidden"
-            />
-          </div>
+          <div className="flex basis-3/5 justify-center md:z-10 md:ml-40 md:mt-16 md:justify-end"></div>
         </motion.div>
-
-        {/* SPONSORS */}
-        {/* {isAboveMediumScreens && (
-          <div className="h-[150px]  w-full bg-primary-100 py-10">
-            <div className="mx-auto w-5/6">
-              <div className="flex w-3/5 items-center justify-between gap-8">
-                <img alt="redbull-sponsor" src={SponsorRedBull} />
-                <img alt="forbes-sponsor" src={SponsorForbes} />
-                <img alt="fortune-sponsor" src={SponsorFortune} />
-              </div>
-            </div>
-          </div>
-        )} */}
       </SwiperSlide>
     </Swiper>
   );
