@@ -8,23 +8,21 @@ const Footer = () => {
           {/* <img alt="logo" src={Logo} /> */}
           <div></div>
           <p className="my-5">
-            Kenya The Magical Pride of Africa Tours was established with a
-            vision to introduce travelers to the enchanting wonders of Kenya.
-            Since our inception, we have been committed to providing
-            extraordinary travel experiences that go beyond the ordinary.
+              Gjoe Global Tours – Your Worldwide Travel Partner!
           </p>
-          <p>© Magical Kenya All Rights Reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Gjoe Global Tours. All Rights Reserved.</p>
         </div>
         <div className="mt-16 basis-1/4 md:mt-0">
           <h4 className="font-bold">Links</h4>
-          <p className="my-5">Contact</p>
-          <p className="my-5">Facilities</p>
-          <p>Services</p>
+          <p className="my-2">Tours</p>
+          <p className="my-2">Contact</p>
+          <p className="my-2">Services</p>
+          <p className="my-2">About us</p>
         </div>
-        <div className="mt-16 basis-1/4 md:mt-0">
+        <div className="mt-16 basis-1/3 md:mt-0">
           <h4 className="font-bold">Contact Us</h4>
-          <p className="my-5">Nairobi Kenya</p>
-          <p>+(254)425-6825</p>
+          <p className="mt-2 mb-1">Kenya | Canada</p>
+          <p className="my-2">Follow Us: Facebook|Instagram|Twitter</p>
         </div>
       </div>
     </footer>

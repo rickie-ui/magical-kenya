@@ -8,6 +8,7 @@ import {
 } from "@heroicons/react/24/solid";
 import HText from "@/components/header/HText";
 import Box from "@/components/box/Box";
+import Location from "@/components/slider/Location";
 
 type Props = {
   setSelectedPage: (value: SelectedPage) => void;
@@ -62,6 +63,8 @@ const Tours = ({ setSelectedPage }: Props) => {
             adventure, or a solo journey to explore the world.
           </p>
         </motion.div>
+
+        <Location/>
 
         <div className="mt-5 grid grid-cols-1 gap-8 md:grid-cols-4">
           {boxes.map((box: BenefitType) => (

@@ -52,13 +52,15 @@ const Home = ({ setSelectedPage }: Props) => {
               }}
             >
               <h3 className=" font-montserrat text-5xl md:text-7xl">
-                Explore the world now
+              Explore the World with Gjoe Global Tours
               </h3>
 
               <p className="mt-8 text-sm font-semibold">
-                Treat yourself with a journey to your inner self.We promise,
-                you’ll enjoy every step you make and create unforgettable
-                memories.
+                  At Gjoe Global Tours, we believe that travel is more than just visiting new places; it’s about discovering new cultures, immersing yourself in breathtaking landscapes, and creating lifelong memories.
+              </p>
+
+              <p className="mt-2 text-sm font-semibold">
+              Whether you dream of experiencing the vast savannas of Kenya, the vibrant cities of Canada, the historic wonders of Europe, or the serene beaches of the Indian Ocean, we make your travel dreams come true.
               </p>
             </motion.div>
             {/* actions */}
@@ -118,10 +120,7 @@ const Home = ({ setSelectedPage }: Props) => {
               </h3>
 
               <p className="mt-8 text-sm font-semibold">
-                Our customer's feedback is essential in building a great
-                reputation and maintaining excellent service. By listening to
-                our customer's needs, we can improve our offerings and provide
-                an exceptional travel experience. .
+              At Gjoe Global Tours, we are committed to providing you with journeys that are not just trips but truly transformative experiences. Your feedback shapes our services, helping us maintain our reputation for excellence and unmatched customer satisfaction.
               </p>
             </motion.div>
             {/* actions */}

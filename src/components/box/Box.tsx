@@ -26,7 +26,7 @@ const Box = ({ icon, title, description, setSelectedPage }: Props) => {
         </div>
       </div>
       <h4 className="font-bold">{title}</h4>
-      <p className="my-3">{description}</p>
+      <p className="my-3 text-left">{description}</p>
       <AnchorLink
         className="text-sm  font-bold text-primary-500 hover:underline"
         onClick={() => setSelectedPage(SelectedPage.ContactUs)}

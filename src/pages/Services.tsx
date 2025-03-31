@@ -24,15 +24,15 @@ type Props = {
 const boxes: Array<BenefitType> = [
   {
     icon: <TruckIcon className="h-6 w-6" />,
-    title: "Transportation Services:",
+    title: "Transportation & Transfers",
     description:
-      "Whether you're looking for a chauffeur-driven car or a private van, our transportation services ensure a comfortable and convenient journey throughout your stay. Sit back and relax as our experienced drivers navigate the roads, allowing you to fully immerse yourself in the destination.",
+      "Airport Pickups & VIP Transfers: Avoid stress upon arrival. Luxury & Budget Car Rentals: From limos to budget-friendly rides. Group & Corporate Transport:For events, weddings, and business travel ",
   },
   {
     icon: <UserGroupIcon className="h-6 w-6" />,
-    title: "Guided Tours:",
+    title: "African Safari Adventures",
     description:
-      "Discover the hidden gems and iconic landmarks with our knowledgeable tour guides. From cultural excursions to thrilling adventures, our guided tours cater to every interest and provide a unique and enriching experience.",
+      "Experience the best safaris in Africa! East Africa: Kenya, Tanzania, Uganda, Rwanda Great Migration in Masai Mara & Serengeti Gorilla trekking in Uganda & Rwanda. Southern Africa: South Africa, Botswana, Zimbabwe, Namibia. Victoria Falls – One of the Seven Natural Wonders. Kruger National Park – The Big Five Safari. Central Africa: Congo, Gabon. Rainforest safaris & primate tracking. West Africa: Ghana, Nigeria, Senegal. Cultural safaris & historical tours",
   },
   {
     icon: <VideoCameraIcon className="h-6 w-6" />,
@@ -101,9 +101,9 @@ const Services = ({ setSelectedPage }: Props) => {
               <div className="before:absolute before:-left-20 before:-top-20 before:z-[-1] before:content-abstractwaves">
                 <div>
                   <HText>
-                    WHY CHOOSE KENYA THE{" "}
+                    WHY CHOOSE{" "}
                     <span className="text-primary-500">
-                      MAGICAL PRIDE OF AFRICA TOURS
+                    GJOE GLOBAL TOURS?
                     </span>
                   </HText>
                 </div>
@@ -131,20 +131,20 @@ const Services = ({ setSelectedPage }: Props) => {
                   visible: { opacity: 1, x: 0 },
                 }}
               >
+                <p className="text-base my-2"> Your adventure, our expertise!</p>
                 <p className="my-5">
-                  Every time we provide the service vice to customers, we strive
-                  to exceed their expectations. Our team of dedicated
-                  professionals works tirelessly to ensure that every
-                  interaction is seamless and enjoyable. From the moment a
-                  customer reaches out to us, we make it our mission to provide
-                  prompt and efficient service.
+                Every time we provide service to customers, we strive to exceed their expectations. Our team of dedicated professionals works tirelessly to ensure that every interaction is seamless and enjoyable. From the moment a customer reaches out to us, we make it our mission to provide prompt and efficient service.
                 </p>
                 <p className="mb-5">
-                  We understand the importance of customer satisfaction and take
-                  pride in our ability to consistently deliver exceptional
-                  results. Our commitment to excellence is what sets us apart
-                  and keeps our customers coming back for more.
+                We understand the importance of customer satisfaction and take pride in our ability to consistently deliver exceptional results. Our commitment to excellence is what sets us apart and keeps our customers coming back for more
                 </p>
+
+                <ul className=" list-disc ml-16">
+                  <li>Local & Global Travel Experts We know the best destinations</li>
+                  <li>Hassle-Free Booking Flights, accommodations, visas, and tours arranged</li>
+                  <li>Budget & Luxury Packages Designed for all types of travelers</li>
+                  <li>Eco-Friendly & Sustainable Tourism Travel responsibly</li>
+                </ul>
               </motion.div>
             </motion.div>
 
@@ -159,6 +159,7 @@ const Services = ({ setSelectedPage }: Props) => {
           </div>
         </div>
       </motion.div>
+
     </section>
   );
 };
