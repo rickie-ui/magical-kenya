@@ -12,6 +12,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
+import Info from "@/components/Info";
 
 type Props = {
   setSelectedPage: (value: SelectedPage) => void;
@@ -76,84 +77,7 @@ const AboutUs = ({ setSelectedPage }: Props) => {
              </div>
             </section>
 
-            <div className=" grid grid-cols-1 md:grid-cols-2 space-x-4 border relative border-primary-500 rounded-2xl mt-20 md:w-11/12">
-               <div className="m-3 tracking-wider">
-                  <h3 className="text-xl mb-4 font-montserrat">
-                      Let us help you plan your next adventure
-                   </h3>
-                   <p className="text-5xl font-bold mt-10">Perfect Vacation come true</p>
-               </div>
-    <Swiper className="flex w-[350px] items-center justify-center md:-ml-20 md:-mt-24  py-10  md:w-[800px]"
-            // install Swiper modules
-            modules={[Autoplay, Pagination, A11y]}
-            slidesPerView={1}
-            spaceBetween={30}
-            autoplay={{
-              delay: 2500,
-              disableOnInteraction: false,
-            }}
-            breakpoints={{
-              768: {
-                slidesPerView: 1,
-              },
-            }}
-            pagination={{ clickable: true }}
-          >
-
-              <SwiperSlide className="h-auto min-w-[350px] relative rounded-xl   bg-white p-4 md:p-6 md:h-auto md:basis-[800px]">
-
-                <div className="absolute h-96 -rotate-[20deg] rounded-md  w-8/12 -z-10 bg-primary-100 top-[20%] left-[20%]"></div>
-              
-                <h3 className="font-semibold text-3xl mx-4 font-montserrat mb-8">
-                    Why Kenya? The Jewel of African Tourism 🇰🇪
-                </h3>
-                
-                <p className="mx-4 tracking-wider">
-                    Kenya is one of the most breathtaking destinations in the world. As our home, it holds a special place in our hearts, and we take pride in sharing its wonders with travelers from across the globe.
-                </p>
-
-                <ul className=" list-disc ml-20 mt-8 tracking-wider">
-
-                  <li className="my-2">
-                    The Great Migration (Masai Mara): Witness the majestic migration of over two million wildebeests and zebras, one of the world’s most phenomenal wildlife events
-                  </li>
-                  <li className="my-2">
-                     Nairobi National Park – The Only Capital City with a Wildlife Park: Experience lions, rhinos, giraffes, and other wildlife roaming freely against the backdrop of a modern city skyline.
-                  </li>
-                  <li className="my-2">
-                    Visa-Free Entry for Most Travelers: Kenya’s new visa-free policy eliminates travel delays and simplifies entry, making it even easier to explore our country.
-                  </li>
-                  <li className="my-2">
-                    World-Class Athletes & High-Altitude Training: Iten, in Kenya’s Rift Valley, is the training ground for some of the world’s fastest marathon runners.
-                  </li>
-                  <li className="my-2">
-                      White Sandy Beaches & Crystal-Clear Waters: From Diani Beach to Watamu, Kenya’s coastline is a tropical paradise for relaxation and adventure.
-                  </li>
-                  <li className="my-2">
-                      White Sandy Beaches & Crystal-Clear Waters: From Diani Beach to Watamu, Kenya’s coastline is a tropical paradise for relaxation and adventure.
-                  </li>
-                  <li className="my-2">
-                      White Sandy Beaches & Crystal-Clear Waters: From Diani Beach to Watamu, Kenya’s coastline is a tropical paradise for relaxation and adventure.
-                  </li>
-                </ul>
-              </SwiperSlide>
-              <SwiperSlide className="h-auto min-w-[350px] relative rounded-xl  bg-white px-6 py-4 md:h-auto md:basis-[800px]">
-              
-              <h3 className="font-semibold text-3xl mx-4 font-montserrat mb-8">
-                    Our Story: From Africa to the World
-                </h3>
-
-                <div className="absolute h-96 -rotate-[20deg] rounded-md  w-8/12 -z-10 bg-primary-100 top-[20%] left-[20%]"></div>
-
-                <p className="m-4 tracking-wider">
-                    Gjoe Global Tours was founded with a vision: to make the world more accessible to travelers through seamless, unforgettable experiences. We started our journey by offering specialized tours in Kenya, showcasing the rich heritage, wildlife, and natural wonders of East Africa. Today, we connect travelers with destinations worldwide, offering a diverse range of packages tailored to all budgets and interests.
-                 </p>
-                 <p className="mx-4 mb-4 tracking-wider">
-                    From the thrilling safaris of the Serengeti to the ancient pyramids of Egypt, the breathtaking fjords of Norway to the bustling streets of Bangkok, and the luxurious beaches of the Seychelles to the cultural richness of Brazil, we ensure that every trip is uniquely crafted for you.
-                </p>
-              </SwiperSlide>
-    </Swiper>
-            </div>
+            <Info/>
           </div>
         </motion.div>
 
